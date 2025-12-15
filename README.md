@@ -18,47 +18,6 @@ Inspirado en una estética **cyberpunk**.
 
 ---
 
-## 📁 Estructura del proyecto
-
-├── index.html
-├── pages/
-│ ├── products/
-│ │ ├── list.html
-│ │ └── detail.html
-│ ├── cart.html
-│ ├── contact.html
-│ └── faq.html
-├── src/
-│ ├── assets/
-│ │ ├── fonts/
-│ │ │ ├── FiraMono-Regular.ttf
-│ │ │ └── Orbitron-VariableFont_wght.ttf
-│ │ ├── icons/
-│ │ │ └── sprite-outlined.svg
-│ │ └── img/
-│ ├── components/
-│ │ ├── header.html
-│ │ └── footer.html
-│ ├── js/
-│ │ ├── auth.js
-│ │ ├── cart.js
-│ │ ├── components.js
-│ │ ├── data.js
-│ │ ├── index.js
-│ │ ├── main.js
-│ │ ├── product-detail.js
-│ │ ├── products-list.js
-│ │ ├── state.js
-│ │ └── ui.js
-│ └── styles/
-│ ├── input.css
-│ └── output.css
-├── package.json
-├── package-lock.json
-└── README.md
-
----
-
 ## 🧠 Simulación de Backend
 
 El proyecto **no utiliza base de datos ni servidor**.  
