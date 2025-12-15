@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/output.css" rel="stylesheet" />
+    <title>Inicio | Chrome Revolution</title>
+  </head>
+
+  <script type="module" src="/src/js/main.js"></script>
+
+  <body class="bg-black font-firamono mx-auto min-w-xs max-w-7xl text-white">
+    <div id="header"></div>
+    <main class="w-full">
+      <section class="relative h-svh w-full md:aspect-video md:h-auto">
+        <img
+          src="/src/assets/img/cyberware.png"
+          class="absolute inset-0 size-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div
+          class="relative flex size-full flex-col items-center justify-center gap-4 text-center font-orbitron"
+        >
+          <p class="uppercase">The best cyberware in Night City</p>
+          <h1 class="text-4xl md:text-6xl font-bold uppercase">
+            Chrome Revolution
+          </h1>
+          <a
+            href="/pages/products/list.html"
+            class="border bg-black/40 border-neon-red px-3 py-2 text-neon-red uppercase hover:bg-neon-red hover:text-black"
+          >
+            Evoluciona ahora
+          </a>
+        </div>
+      </section>
+      <section class="flex justify-center p-6">
+        <div class="w-full max-w-6xl flex flex-col items-center gap-4">
+          <h2 class="font-orbitron text-xl md:text-2xl font-bold uppercase">
+            Ciberware más vendido
+          </h2>
+          <div
+            id="products"
+            class="flex w-full flex-row flex-wrap justify-center gap-3 lg:gap-6"
+          ></div>
+        </div>
+      </section>
+      <section class="flex w-full justify-center py-6">
+        <div
+          class="w-9/10 flex flex-col border-2 border-neon-red bg-black/80 shadow-lg backdrop-blur md:w-3/4"
+        >
+          <div class="border-b border-neon-red bg-black/60 px-4 py-2">
+            <h2 class="text-xl font-bold uppercase tracking-wider md:text-2xl">
+              ¿Que es el ciberware?
+            </h2>
+          </div>
+          <div class="flex flex-col gap-4 p-4 md:flex-row">
+            <div class="w-full md:w-2/3">
+              <p class="mb-2 text-sm md:text-base">
+                El ciberware son implantes y tecnología artificial que se
+                integran en el cuerpo humano para aumentar o mejorar sus
+                capacidades, sirviendo como una interfaz entre el cuerpo y las
+                máquinas.
+              </p>
+              <p class="text-sm md:text-base">
+                Abarca prótesis avanzadas, interfaces cerebro-computadora y
+                otras tecnologías biomédicas emergentes que buscan conectar el
+                sistema nervioso humano directamente con sistemas informáticos.
+              </p>
+            </div>
+            <div class="flex w-full justify-center md:w-1/3">
+              <div
+                class="aspect-square w-full max-w-sm overflow-hidden rounded-md border border-neon-red md:max-w-md"
+              >
+                <img
+                  src="/src/assets/img/KiroshiOpticsImplant.webp"
+                  alt="CyberwareImplant"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-6">
+        <h2 class="font-orbitron text-center text-xl font-bold uppercase">
+          Newsletter
+        </h2>
+        <form
+          id="newsletter-form"
+          class="flex flex-col items-center gap-4 mt-4"
+        >
+          <input
+            id="newsletter-email"
+            type="email"
+            required
+            placeholder="tucorreo@ejemplo.com"
+            class="w-3/4 md:w-1/2 border border-neon-red px-3 py-2 bg-black"
+          />
+          <button
+            type="submit"
+            class="border border-neon-red px-3 py-2 text-neon-red uppercase hover:bg-neon-red hover:text-black"
+          >
+            Suscribirse
+          </button>
+        </form>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/index.js"></script>
+  </body>
+</html>

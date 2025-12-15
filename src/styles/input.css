@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/src/assets/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  src: url('/src/assets/fonts/FiraMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --color-neon-red: #FF3131;
+
+  --font-orbitron: Orbitron, sans-serif;
+  --font-firamono: "Fira Mono", monospace;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/output.css" rel="stylesheet" />
+    <title>Contacto | Chrome Revolution</title>
+  </head>
+
+  <body class="bg-black font-firamono mx-auto min-w-xs max-w-7xl text-white">
+    <div id="header"></div>
+    <main class="w-full min-h-screen">
+      <section class="flex w-full justify-center p-6">
+        <div class="w-full max-w-6xl">
+          <h2
+            class="font-orbitron mb-6 text-center md:text-start text-2xl font-bold uppercase tracking-wider text-white"
+          >
+            Contacto
+          </h2>
+          <div class="w-full flex flex-col md:flex-row">
+            <div class="w-full md:w-2/5">
+              <ul class="flex flex-col gap-4">
+                <li class="flex items-center gap-2">
+                  <svg class="size-6 text-white">
+                    <use
+                      href="/src/assets/icons/sprite-outlined.svg#icon-phone"
+                    ></use>
+                  </svg>
+                  <a
+                    href="tel:1112345678"
+                    class="transition hover:text-neon-red"
+                    >11 1234-5678</a
+                  >
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="size-6 text-white">
+                    <use
+                      href="/src/assets/icons/sprite-outlined.svg#icon-mail"
+                    ></use>
+                  </svg>
+                  <a
+                    href="mailto:example@example.com"
+                    class="transition hover:text-neon-red"
+                    >example@example.com</a
+                  >
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="size-6 text-white">
+                    <use
+                      href="/src/assets/icons/sprite-outlined.svg#icon-whatsapp"
+                    ></use>
+                  </svg>
+                  <a
+                    href="https://www.whatsapp.com"
+                    class="transition hover:text-neon-red"
+                    >11 1234-5678</a
+                  >
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="size-6 text-white">
+                    <use
+                      href="/src/assets/icons/sprite-outlined.svg#icon-map-pin"
+                    ></use>
+                  </svg>
+                  <a
+                    href="https://www.google.com/maps"
+                    class="transition hover:text-neon-red"
+                    >Calle Falsa 1234</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="w-full md:w-3/5 flex justify-center md:justify-end mt-6 md:mt-0"
+            >
+              <form id="newsletter-form" class="flex flex-col gap-4 md:w-full">
+                <input
+                  id="contact-nombre"
+                  type="text"
+                  required
+                  placeholder="Nombre"
+                  class="w-full border border-neon-red px-3 py-2 bg-black text-white"
+                />
+                <input
+                  id="contact-mail"
+                  type="email"
+                  required
+                  placeholder="Correo electrónico"
+                  class="w-full border border-neon-red px-3 py-2 bg-black text-white"
+                />
+                <input
+                  id="contact-telefono"
+                  type="tel"
+                  required
+                  placeholder="Teléfono"
+                  class="w-full border border-neon-red px-3 py-2 bg-black text-white"
+                />
+                <textarea
+                  id="contact-mensaje"
+                  required
+                  placeholder="Mensaje"
+                  class="w-full border border-neon-red px-3 py-2 bg-black text-white resize-none h-32"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="border border-neon-red px-3 py-2 text-neon-red uppercase hover:bg-neon-red hover:text-black"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

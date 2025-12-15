@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/output.css" rel="stylesheet" />
+    <title>Cyberware | Chrome Revolution</title>
+  </head>
+
+  <body class="bg-black font-firamono mx-auto min-w-xs max-w-7xl text-white">
+    <div id="header"></div>
+    <main class="w-full min-h-svh">
+      <section class="flex w-full justify-center p-6">
+        <div class="w-full max-w-6xl">
+          <h2
+            class="font-orbitron mb-6 text-center text-2xl font-bold uppercase tracking-wider text-white"
+          >
+            Lista de Cyberware
+          </h2>
+          <div
+            id="products-list"
+            class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+          ></div>
+          <script type="module" src="/src/js/products-list.js"></script>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

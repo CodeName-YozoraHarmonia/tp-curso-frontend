@@ -1,0 +1,34 @@
+<header class="w-full">
+  <nav class="px-8 py-4 flex items-center gap-4">
+    <svg class="size-10 text-white sm:hidden">
+      <use href="/src/assets/icons/sprite-outlined.svg#icon-menu"></use>
+    </svg>
+    <a href="/index.html">
+      <img src="/src/assets/img/logo.png" alt="logo" class="max-h-10" />
+    </a>
+    <ul class="hidden sm:flex gap-4 grow">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/pages/products/list.html">Ciberware</a></li>
+      <li><a href="/pages/contact.html">Contacto</a></li>
+    </ul>
+    <div id="auth-area" class="ml-auto flex items-center gap-4">
+      <a
+        href="/pages/cart.html"
+        class="relative flex items-center justify-center"
+        title="Carrito"
+      >
+        <svg class="size-8 font-normal text-white transition hover:text-neon-red">
+          <use
+            href="/src/assets/icons/sprite-outlined.svg#icon-shopping-cart"
+          ></use>
+        </svg>
+      </a>
+      <button
+        id="login-btn"
+        class="border border-neon-red px-3 py-1 uppercase text-neon-red hover:bg-neon-red hover:text-black"
+      >
+        Login
+      </button>
+    </div>
+  </nav>
+</header>

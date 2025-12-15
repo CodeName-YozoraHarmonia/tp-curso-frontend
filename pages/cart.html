@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/output.css" rel="stylesheet" />
+    <title>Carrito | Chrome Revolution</title>
+  </head>
+
+  <body class="mx-auto min-w-xs max-w-7xl bg-black text-white font-firamono">
+    <div id="header"></div>
+    <main class="w-full min-h-svh p-6">
+      <section class="max-w-6xl mx-auto flex flex-col gap-6">
+        <h1 class="text-3xl font-orbitron uppercase text-center">
+          Carrito de compra
+        </h1>
+        <div
+          id="cart-container"
+          class="flex flex-col gap-4 p-4 bg-black/80"
+        ></div>
+        <div
+          id="cart-summary"
+          class="hidden flex justify-between items-center border-t border-neon-red pt-4"
+        >
+          <p class="text-xl font-bold">
+            Total: <span id="cart-total" class="text-neon-red">$0</span>
+          </p>
+          <button
+            class="border border-neon-red px-4 py-2 text-neon-red uppercase hover:bg-neon-red hover:text-black"
+          >
+            Finalizar compra
+          </button>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script type="module" src="/src/js/cart.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
